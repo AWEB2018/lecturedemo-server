@@ -17,6 +17,10 @@
     >> Create First Class. Print Hello World.
     >> Create static and non static method.
 
+    >> Create constructor of a class.
+    >> Export a module. *** module.exports
+    >> Import a module. *** require
 
+    
 
     
