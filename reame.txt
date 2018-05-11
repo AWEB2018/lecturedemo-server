@@ -1,0 +1,13 @@
+## DAY 12
+    >> SETUP PROJECT
+        >>> npm init
+        >>> npm install typescript -g
+        >>> tsc --init
+        >>> Modify the tsconfig.json file. 
+            >>>> allowjs : true
+            >>>> sourcemap : true
+            >>>> outDir : './bin'       // Create bin folder
+            >>>> rootDir : './src'      // Create src folder
+        >>> Update Package.json file
+            >>>> "dev" : "tsc -w -p tsconfig.json"
+
