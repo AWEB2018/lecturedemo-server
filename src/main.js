@@ -1,5 +1,6 @@
 let Employee = require("./day12/employee");
 let Person = require("./day12/person");
+let UserDao = require("./day12/user/user.dao");
 
 class Hello {
     static main(){
@@ -13,6 +14,9 @@ class Hello {
             let p1 = new Person("Mukesh");
             let pname = p1.getName();
             console.log(pname);
+
+            let userDao = UserDao.getInstance();
+            userDao.createUser();
         }catch(err){
             console.log(err);
         }
