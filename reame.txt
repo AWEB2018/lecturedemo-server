@@ -10,4 +10,13 @@
             >>>> rootDir : './src'      // Create src folder
         >>> Update Package.json file
             >>>> "dev" : "tsc -w -p tsconfig.json"
+    >> Setup Debugging. 
 
+
+## ASSIGNMENTS
+    >> Create First Class. Print Hello World.
+    >> Create static and non static method.
+
+
+
+    
