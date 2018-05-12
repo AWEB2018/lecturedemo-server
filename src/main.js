@@ -1,22 +1,25 @@
 let Employee = require("./day12/employee");
 let Person = require("./day12/person");
 let UserDao = require("./day12/user/user.dao");
+let DemoOverloading = require("./day13/demo.overloading");
 
 class Hello {
     static main(){
         try{
             console.log("Hello World");
 
-            let emp1 = new Employee("CDAC", 1);        
-            let name = emp1.getName();
-            console.log(name);
+            let a=10;
+            let b=20;
 
-            let p1 = new Person("Mukesh");
-            let pname = p1.getName();
-            console.log(pname);
+            let list = ["MUKESH", 1000000000];
 
-            let userDao = UserDao.getInstance();
-            userDao.createUser();
+            let ref = new DemoOverloading();
+            ref.helloOverloading();
+            ref.helloOverloading(a);
+            ref.helloOverloading(a, "Helo");
+            ref.helloOverloading(list);
+
+            ref.myoperation(1);
         }catch(err){
             console.log(err);
         }
