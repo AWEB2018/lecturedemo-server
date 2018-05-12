@@ -1,4 +1,5 @@
 let DemoCallabck1 = require("./day13/demo.callback1");
+let DemoFileIO = require("./day13/demo.fileio");
 
 class MainProgram {
 
@@ -15,6 +16,17 @@ class MainProgram {
 
             ref.callNetworkUsingCallback(function(p1, p2){
                 console.log("I will be called; ");
+            });
+
+
+            // FILE IO EXAMPLE
+            let ref1 = new DemoFileIO();
+            let fileOutput = ref1.demoReadFileSync();
+            console.log(fileOutput);
+
+
+            ref1.demoReadFileASync(function(err, data){
+                console.log(data);
             });
 
         }catch(error){
