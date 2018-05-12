@@ -21,6 +21,10 @@ class DemoCallBack {
         }, 15000);
         console.log("END");
     }
+
+    reviseCallbackAgain(){
+        
+    }
 }
 
 module.exports = DemoCallBack;
