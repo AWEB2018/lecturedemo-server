@@ -5,8 +5,8 @@ class Hello {
         try{
             
             let ref = new DemoPromise();
-            ref.helloPromise();
-            
+            ref.readFiveFile();
+
         }catch(err){
             console.log(err);
         }
