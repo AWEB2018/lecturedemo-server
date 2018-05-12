@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "File Five Program",
+            "program": "${workspaceFolder}/src/index.1.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Main Callback Program",
             "program": "${workspaceFolder}/src/index.js"
         },

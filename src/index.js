@@ -17,7 +17,7 @@ class MainProgram {
             let cb = function(p1, p2){
                 console.log("I will be called; ");
             };
-            ref.callNetworkUsingCallback(cb);
+            ref.callNetworkUsingCallback(a, b, cb);
 
 
            
