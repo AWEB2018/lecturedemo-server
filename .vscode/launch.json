@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "SEVER Program",
+            "program": "${workspaceFolder}/src/main.server.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Promise Program",
             "program": "${workspaceFolder}/src/main.promise.js"
         },
