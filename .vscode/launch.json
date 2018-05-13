@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Launch Program1",
+            "program": "${workspaceFolder}/src/dayx/db.main.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "SEVER Program",
             "program": "${workspaceFolder}/src/main.server.js"
         },
