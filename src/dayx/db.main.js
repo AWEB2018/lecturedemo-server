@@ -20,10 +20,8 @@ class DBSample{
         var param = [1, "CDAC"];
         connection.query(sql, function(err, results) {
             console.log(results);
-
-            // STEP LAST
-            connection.end();
         });
+        connection.end();
     }
 }
 
