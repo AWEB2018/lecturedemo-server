@@ -119,7 +119,7 @@ class DBConnectionCheck {
     }
 
 
-    static updateEmp(){
+    static updateEmployee(){
         try{
             let connection=mysql.createConnection(config);
 
@@ -133,6 +133,77 @@ class DBConnectionCheck {
             console.log(err);
         }
     }
+
+
+    static updateEmployeeVer1(name, id){
+        try{
+            let connection=mysql.createConnection(config);
+
+            connection.connect();
+
+            let sql="UPDATE EMPLOYEE SET NAME='" + name + "' WHERE ID=" + id;
+            connection.query(sql);
+
+            connection.end();
+        }catch(err){
+            console.log(err);
+        }
+    }
+
+
+    static updateEmployeeVer2(name, id){
+        try{
+            let connection=mysql.createConnection(config);
+
+            connection.connect();
+
+            let sql="UPDATE EMPLOYEE SET NAME=? WHERE ID=?";
+            connection.query(sql, [name, id]);
+
+            connection.end();
+        }catch(err){
+            console.log(err);
+        }
+    }
+
+    static updateEmployeeVer3(emp){
+        try{
+            let connection=mysql.createConnection(config);
+
+            connection.connect();
+
+            let sql="UPDATE EMPLOYEE SET NAME=?, DEPT=? WHERE ID=?";
+            connection.query(sql, [emp.name, emp.dept, emp.id]);
+
+            connection.end();
+        }catch(err){
+            console.log(err);
+        }
+    }
+    static insertEmployeeVer1(emp){
+        try{
+            let connection=mysql.createConnection(config);
+
+            connection.connect();
+
+            let sql="INSERT INTO EMPLOYEE(NAME,SALARY,DEPT) VALUES(?,?,?)";
+
+            connection.query(sql,[emp.name,emp.salary,emp.dept]);
+
+            connection.end();
+        }
+        catch(err){
+            console.log(err);
+        }
+        
+    }
+
 }
 
-DBConnectionCheck.updateEmp();
+let emp = {
+    "name" : "KHYATI",
+    "id" : 1,
+    "dept" : "CS",
+    "salary" : 100000
+}
+DBConnectionCheck.insertEmployeeVer1(emp);
