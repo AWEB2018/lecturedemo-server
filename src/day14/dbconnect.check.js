@@ -198,6 +198,25 @@ class DBConnectionCheck {
         
     }
 
+
+    static readEmployeever1(emp){
+        try{
+            let connection=mysql.createConnection(config);
+
+            connection.connect();
+
+            let sql="SELECT * FROM EMPLOYEE WHERE ID=?";
+
+            connection.query(sql,[emp.id],(err,result)=>{
+                console.log(result);
+            });
+
+            connection.end();
+        }catch(err){
+            console.log(err);
+        }
+    }
+
 }
 
 let emp = {
@@ -206,4 +225,4 @@ let emp = {
     "dept" : "CS",
     "salary" : 100000
 }
-DBConnectionCheck.insertEmployeeVer1(emp);
+DBConnectionCheck.readEmployeever1(emp);
