@@ -1,3 +1,24 @@
+## DAY 14
+    >> NODEJS AND MYSQL INTEGRATION
+        >>> START YOUR DATABASE
+        >>> CREATE DATABASE (DAC2018)
+        >>> CREATE TABLE (EMPLOYEE)
+    
+    >> AUTHORIZATION
+        >>> URL of your DATABASE
+        >>> USERNAME :: root
+        >>> PASSWORD :: ""
+
+    >> NOTE::
+        >>> Write all your sql in one file. project.sql
+
+    >> INSTALL node library. :: IMPORTANT
+        >>> npm install mysql --save
+
+    >> FIRST PRGORAM
+        >>> Verify/Check datbase connection.
+
+
 ## DAY 13
     >> Overloading Concept in JS/PHP.
     >> Callback Concept and practice.

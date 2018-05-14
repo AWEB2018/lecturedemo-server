@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "DB CONNECTION CHECK",
+            "program": "${workspaceFolder}/src/day14/dbconnect.check.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch Program1",
             "program": "${workspaceFolder}/src/dayx/db.main.js"
         },
