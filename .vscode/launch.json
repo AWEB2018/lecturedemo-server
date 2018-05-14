@@ -19,8 +19,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "SEVER Program",
-            "program": "${workspaceFolder}/src/main.server.js"
+            "name": "SERVER Program",
+            "program": "${workspaceFolder}/src/app.server.js"
         },
         {
             "type": "node",

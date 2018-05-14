@@ -43,7 +43,7 @@ class EmployeeModule {
     }
 
 
-    static readAllEmployee() {
+    static readAllEmployee(cb) {
         try{
             let config = {
                 "host" : "localhost",
@@ -69,6 +69,8 @@ class EmployeeModule {
                     console.log(err);
                 } else {
                     console.log(results);
+                    
+                    cb(results);
                 }
             });
             

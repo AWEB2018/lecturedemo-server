@@ -1,4 +1,8 @@
 ## DAY 14
+    >> ExpressJS    
+        >>> Start the server
+        >>> Create basic get service.
+
     >> NODEJS AND MYSQL INTEGRATION
         >>> START YOUR DATABASE
         >>> CREATE DATABASE (DAC2018)
