@@ -1,4 +1,5 @@
 let express = require("express");
+let cors = require("cors");
 
 let EmployeeModule = require("./day14/EmployeeModule");
 
@@ -7,6 +8,7 @@ class AppServer{
     static main(){
         try{
             let app = express();
+            app.use(cors()); // CROSS ORIGIN REUEST ALLOWING
 
             app.get("/", (req, res)=>{
                 let output = {"name":"CDAC"};
@@ -19,7 +21,6 @@ class AppServer{
             });
 
             app.get("/emp", (req, res)=>{
-                let output = {"name":"Hello CDAC"};
 
                 EmployeeModule.readAllEmployee((data)=>{
                     res.json(data);

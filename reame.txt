@@ -1,4 +1,8 @@
 ## DAY 14
+    >> ALLOW CROSS ORIGIN REQUEST
+        npm install cors --save
+        app.use(cors);
+
     >> ExpressJS    
         >>> Start the server
         >>> Create basic get service.
