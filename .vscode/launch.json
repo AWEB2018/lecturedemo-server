@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "POST PROGREAM",
+            "program": "${workspaceFolder}/src/postmodule/post.module.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "DB CONNECTION CHECK",
             "program": "${workspaceFolder}/src/day14/dbconnect.check.js"
         },
