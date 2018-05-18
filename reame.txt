@@ -1,3 +1,5 @@
+## DAY_EXAM
+    
 ## DAY_LAST
     CREATE TABLE POSTS (
         ID int NOT NULL AUTO_INCREMENT,
