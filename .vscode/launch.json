@@ -26,7 +26,7 @@
             "type": "node",
             "request": "launch",
             "name": "SERVER Program",
-            "program": "${workspaceFolder}/src/app.server.js"
+            "program": "${workspaceFolder}/src/post.server.js"
         },
         {
             "type": "node",
