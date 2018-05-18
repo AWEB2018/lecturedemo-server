@@ -4,6 +4,7 @@
         LIKE_COUNT NUMBER(11) NOT NULL,
         DISLIKE_COUNT NUMBER(11),
         POST VARCHAR(200),
+        Age int,
         PRIMARY KEY (ID)
     );
 
