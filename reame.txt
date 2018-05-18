@@ -8,6 +8,7 @@
         POST VARCHAR(200),
         PRIMARY KEY (ID)
     );
+    >> AUTO_INCRMENT
 
 ## DAY 14
     >> ALLOW CROSS ORIGIN REQUEST
