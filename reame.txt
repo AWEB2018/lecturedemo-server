@@ -2,7 +2,7 @@
     CREATE TABLE POSTS (
         ID int NOT NULL AUTO_INCREMENT,
         LIKE_COUNT NUMBER(11) NOT NULL,
-        FirstName varchar(255),
+        DISLIKE_COUNT varchar(255),
         Age int,
         PRIMARY KEY (ID)
     );
