@@ -15,7 +15,7 @@ class PostModule {
 
             connection.connect();
 
-            let sql = "SELECT * FROM POST";
+            let sql = "SELECT * FROM POST ORDER BY ID DESC";
             connection.query(sql, (err, data)=> {
                 console.log(data);
 
